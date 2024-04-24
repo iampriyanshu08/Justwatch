@@ -4,11 +4,13 @@ import MovieCards from "./MovieCards";
 
 
 
-const Home = () => {
+
+const Home = ({addwatch,removewatch,watchlist}) => {
   return (
     <>
       <Banner />
-      <MovieCards/>
+      <MovieCards addwatch={addwatch} removewatch={removewatch} watchlist={watchlist}/>
+      
      
     </>
   );
